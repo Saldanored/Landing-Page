@@ -1,0 +1,154 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p{
+  text-align: justify;
+  padding: 0.5rem 0;
+  color: rgba(0, 0, 0, 0.7);
+}
+h2{
+  text-align: center;
+}
+/* NAVBAR */
+nav{
+  display:flex;
+  justify-content: space-between;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  align-items: center;
+  align-content: center;
+  color: #f4f4f4;
+  background: #333;
+  padding: 0.5rem 3rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+}
+
+nav h2{
+  padding: 0.5rem;
+}
+nav ul{
+  display:flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+nav ul li{
+  margin: 0 0.5rem;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #f4f4f4;
+  padding: 1rem 0.5rem;
+}
+
+nav ul li a:hover{
+  background: red;
+
+}
+/* UTILITIES */
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.paragraphs{
+  padding: 1rem;
+}
+.arriba{
+  display: flex;
+}
+.contenedor{
+  min-height: 100vh;
+}
+/* SECTION  */
+section{
+  display:flex;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  justify-content: center;
+
+}
+
+.card{
+  cursor: pointer;
+  margin: 0.5rem;
+  max-width: 200px;
+  opacity: 0.85;
+  -webkit-box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.3);
+  -moz-box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.3);
+  box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.3);
+}
+
+.card:hover{
+  opacity: 1;
+}
+
+
+img{
+  width: 100%;
+
+}
+
+/* footer */
+footer{
+  background-color: #333;
+  color: #f4f4f4;
+  padding: 1rem;
+
+}
+
+footer p{
+  background: darkgray;
+  padding: 0.5rem;
+  color: #333;
+  text-align: center;
+  border-radius: 5px;
+
+}
+
+/* MOBILE DEVICES */
+@media(max-width:480px){
+  section{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  nav{
+    position: relative;
+    display: block;
+    text-align: center;
+    padding: 0rem;
+  }
+
+  nav ul{
+    display: block;
+
+  }
+  nav ul li{
+    display: block;
+    border-bottom: 1px solid white;
+
+
+  }
+
+  nav ul li a{
+    text-decoration: none;
+    color: #f4f4f4;
+    padding: 0.5rem;
+    display: inline-block;
+    width: 80vw;
+
+  }
+  
+  nav ul li a:hover{
+    background: none;
+  
+  }
+}
